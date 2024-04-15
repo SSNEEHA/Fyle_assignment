@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+  <div class="container">
+    <form id="taxCalculatorForm">
+      <div class="form-group"style="margin-top: 40px;" >
+        <label for="grossIncome" style="font-size: 13px; "> <b>Enter gross annual income
+          <img  id="image1" src="C:\Users\sneha suresh\Desktop\Fyle assignment\qimage.png" class="image-class"> 
+        </b></label>
+        <input type="text"  class="img1" id="grossIncome" placeholder="Enter gross annual income" >
+        <span class="error-icon" id="grossIncomeErrorIcon" data-tooltip="Please enter a valid gross annual income"></span>     
+      </div>
+
+      <div class="form-group">
+        <label for="extraIncome" style="font-size: 13px;"><b>Enter extra income
+          <img id="image2"src="C:\Users\sneha suresh\Desktop\Fyle assignment\qimage.png" class="image-class">
+        </b></label>
+        <input type="text" id="extraIncome" name="extraIncome" placeholder="Enter extra income from other sources">
+        <span class="error-icon" id="extraIncomeErrorIcon" data-tooltip="Please enter a valid extra income"></span>    
+        </div>
+      
+      <div class="form-group">
+        <label for="age" style="font-size: 13px;" ><b> Enter age Group
+          <img id="image3"src="C:\Users\sneha suresh\Desktop\Fyle assignment\qimage.png" class="image-class">
+        </b></label>
+        <select id="age" name="age"  style="width:338px" required>
+          <option value=""></option>
+          <option value="<40">&lt;40</option>
+          <option value="≥ 40 & < 60">≥ 40 &lt; 60</option>
+          <option value="≥ 60">≥ 60</option>
+        </select>
+         <span class="error-icon" id="ageErrorIcon" data-tooltip="Please select an age group"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="deductions" style="font-size: 13px;"><b>Enter total applicable deductions
+          <img  id="image4"src="C:\Users\sneha suresh\Desktop\Fyle assignment\qimage.png" class="image-class">
+        </b></label>
+        
+        <input type="text" id="deductions" name="deductions" placeholder=" Add total applicable deductions">
+          <span class="error-icon" id="deductionsErrorIcon" data-tooltip="Please enter valid deductions"></span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>  
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div id="result"></div>
+      <button class="btn">Close</button>
+    </div>
+  <script src="assignment.js">
+    </script>
+</body>
+</html>
