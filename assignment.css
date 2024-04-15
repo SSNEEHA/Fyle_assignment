@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .img1{
+    background-image: url('images.png');
+    background-position: right;
+    padding-left:25px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius:8px;
+    display: flex;
+  }
+ 
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .image-class{
+    width: 15px;
+    height:auto;
+    cursor: pointer;
+  position: relative;
+  }
+
+.info-div.info-div-1 {
+  top: 2px;
+  left: 626px;
+  background-color:grey;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  font-weight: bold;  
+}
+.info-div.info-div-1::after{
+  content: '';
+  position: absolute;
+  bottom: -5px; 
+  left: 15%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent; 
+  border-top: 5px solid gray; 
+  transform: translateX(-50%);
+
+}
+
+.info-div.info-div-2 {
+  top: 85px;
+  left: 577px;
+  background-color:grey;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  font-weight: bold;  
+}
+.info-div.info-div-2::after{
+  content: '';
+  position: absolute;
+  bottom: -5px; 
+  left: 15%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent; 
+  border-top: 5px solid gray; 
+  transform: translateX(-50%);
+}
+
+
+.info-div.info-div-3 {
+  top: 195px;
+  left: 550px;
+  background-color:gray;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  font-weight: bold; 
+}
+.info-div.info-div-3::after{
+  content: '';
+  position: absolute;
+  bottom: -5px; 
+  left: 15%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent;
+  border-top: 5px solid gray; 
+  transform: translateX(-50%);
+}
+
+.info-div.info-div-4 { 
+  top: 265px;
+  left: 650px;
+  background-color:gray;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  font-weight: bold; 
+}
+.info-div.info-div-4::after{
+  content: '';
+  position: absolute;
+  bottom: -5px; 
+  left: 15%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent;
+  border-top: 5px solid gray; 
+  transform: translateX(-50%);
+}
+ 
+  input[type="text"],
+  select {
+    width:320px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 98%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+  display: block;
+  margin-top: 65px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.img{
+  width: 10px;
+  height: 10px;
+
+}
+
+.error-icon {
+  display:none; 
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  
+}
+
+.error-icon:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #ffcccc;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .btn {
+    width: 65px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+  display: block;
+  margin-top: 65px;  
+  }
+
+
+  .first{
+    font-size: 30px;
+    text-align: center;
+  font-weight:100;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+ .second{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 50;
+
+ } 
+ .third{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 50;
+  
+ }
+
+  
+
+
+ 
+
+  
